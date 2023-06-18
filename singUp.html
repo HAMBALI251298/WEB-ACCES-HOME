@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>Sign Up - Bank Hambali</title>
+</head>
+<body>
+    <div>
+        <div id="pageHeaderPanel" class="pageHeader">
+            <a class="homeLink" href="#">
+                <!-- <img/> -->
+                <label>
+                    Bank Hambal
+                </label>
+            </a>
+        </div>
+
+        <div id="pageBodyPanel" class="pageBody">
+            <div>
+                <div>
+                    <div class="h-centerText">
+                        <h3>
+                            Sign up to get access to all our <br/>
+                            banking services.
+                        </h3>
+                        <div>
+                            <i>
+                                NB: Required fields begin with <span class="required-Label"></span>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="h-centerGroup">
+                        <div class="errorPanel negative" id="inputErrorPanel">
+                        </div>
+                    </div>
+
+                    <div class="h-centerGroup">
+                        <div class="formPanel signUp">
+                            <div class="formPanelRow" >
+                                <span class="formPanelLeftItem">
+                                    <label class="formPanelLabel">
+                                        Title
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input name="newUserTitle" id="newUserTitle" class="formPanelInput" list="titleDataList" type="text"/>
+                                    <datalist id="titleDataList">
+                                        <option value="Dr.">Dr.</option>
+                                        <option value="Engr.">Engr.</option>
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                    </datalist>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="signUpLabel required-Label formPanelLabel">
+                                        Last Name
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input name="newUserLastName" id="newUserLastName" class="formPanelInput" type="text" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="signUpLabel required-Label formPanelLabel">
+                                        First Name
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input name="newUserFirstName" id="newUserFirstName" class="formPanelInput" type="text" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="formPanelLabel">
+                                        Sex
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <select name="newUserSex" id="newUserSex" class="formPanelSelect">
+                                        <option value="female" selected="selected">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="required-Label formPanelLabel">
+                                        Date of Birth
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input type="date" class="formPanelInput" name="newUserDOB" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="signUpLabel required-Label formPanelLabel">
+                                        Email
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input type="email" class="formPanelInput" name="newUserEmail" id="newUserEmail" placeholder="marcus@qmail.com" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="signUpLabel required-Label formPanelLabel">
+                                        Phone Number
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input type="tel" class="formPanelInput" name="newUserPhoneNumber" id="newUserPhoneNumber" placeholder="0806 - 123 - 4569" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="required-Label signUpLabel formPanelLabel">
+                                        Password
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input type="password" class="formPanelInput" name="newUserPassword" id="newUserPassword" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="signUpLabel required-Label formPanelLabel">
+                                        Confirm Password
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <input type="password" class="formPanelInput" name="newUserConfirmPassword" id="newUserConfirmPassword" required="required"/>
+                                </span>
+                            </div>
+
+                            <div class="formPanelRow">
+                                <span class="formPanelLeftItem">
+                                    <label class="formPanelLabel">
+                                        Profile Picture
+                                    </label>
+                                </span>
+                                <span class="formPanelRightItem">
+                                    <div>
+                                        <div id="signUpProfilePicContainer">
+                                            <svg id="signUpProfilePicBg" onmouseover="signUpProfilePicture_OnMouseOver()" onmouseout="signUpProfilePicture_OnMouseOut()" width="100px" height="100px">
+                                                <g transform="translate(0,-270.54167)">
+                                                    <path
+                                                        style="fill:#373737;fill-opacity:1;stroke:#373737;stroke-width:1.06500006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                                        d="m 0.71428571,371.10597 c 0,-2.85114 0,-5.70193 -0.13364321,-11.22567 -0.1336432,-5.52374 -0.40085914,-13.71836 0.23404099,-18.63016 0.63490011,-4.9118 2.17151071,-6.53748 3.70834401,-8.16341 1.5368332,-1.62592 3.0736455,-3.25183 5.3791818,-5.69102 2.3055367,-2.4392 5.3783957,-5.6902 9.4989877,-6.60323 4.120591,-0.91303 9.287479,0.51231 12.940053,2.78405 3.652574,2.27174 5.790679,5.38981 7.839815,7.88442 2.049137,2.4946 4.0092,4.36557 7.439055,5.30095 3.429856,0.93538 8.330132,0.93538 11.93822,-1.3e-4 3.608088,-0.93551 5.92455,-2.8065 8.062654,-5.34559 2.138104,-2.5391 4.098084,-5.74634 7.127203,-7.92893 3.029119,-2.18259 7.127212,-3.34075 10.401156,-2.38303 3.273945,0.95772 5.723909,4.03116 7.561462,6.33637 1.837554,2.30521 3.062549,3.842 4.421155,5.33431 1.358606,1.49231 2.850718,2.94003 3.50773,7.58384 0.65702,4.6438 0.47884,12.48354 0.48124,18.09614 0.002,5.6126 0.17576,8.81998 0.35395,12.11655" />
+                                                    <ellipse
+                                                        style="opacity:1;fill:#373737;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26844606;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                                                        cx="53.099113" cy="303.8877" rx="18.708866" ry="21.515198" />
+                                                </g>
+                                            </svg>
+                                            <img id="signUpProfilePic" onmouseover="signUpProfilePicture_OnMouseOver()" onmouseout="signUpProfilePicture_OnMouseOut()" />
+
+                                            <div id="signUpProfilePicNavBar" onmouseover="signUpProfilePicture_OnMouseOver()" onmouseout="signUpProfilePicture_OnMouseOut()" >
+                                                <button class="changePic" onclick="browsePicture_OnClick('signUpProfilePicInput', 'signUpProfilePic')" title="Change this photo">
+                                                    <img src="./images/change.png"/>
+                                                </button>
+                                                <button class="removePic" onclick="removePicture_OnClick('signUpProfilePicInput', 'signUpProfilePic')" title="Remove this photo">
+                                                    <img src="./images/remove.png"/>
+                                                </button>
+                                            </div>
+                                            <input type="file" id="signUpProfilePicInput"  accept=".jpeg, .jpg, .png, .bmp" hidden="hidden"/>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+
+                            <div class="h-centerGroup">
+                                <button class="actionBtn" id="signUpBtn">Sign Up</button>
+                            </div>
+
+                            <br/>
+                            <span class="h-centerGroup">
+                                <span>
+                                    <span>
+                                        Already have an account?
+                                    </span>
+                                    <a class="inline" href="./signIn.html" target="_blank">Sign In</a>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+
+                const browsePicture_OnClick = (inputElementId, outputElementId) => {
+                    // file input element for opening the file select dialog and storing the image as a blob.
+                    const pictureInputElement = document.getElementById(inputElementId);
+                    // img element for displaying the image.
+                    const outputImageElement = document.getElementById(outputElementId);
+                    pictureInputElement.addEventListener("change", (ev) => {
+                        const fileArray = pictureInputElement.files;
+                        if (fileArray.length > 0){
+                            readImageFile(fileArray[0],outputImageElement);
+                        }
+                    });
+                    pictureInputElement.click();
+                };
+
+                const toggleImgElement = (toggleCode) => {
+                    const pictureElement = document.getElementById('signUpProfilePic');
+                    if (toggleCode == 1) {
+                        pictureElement.style.visibility = "visible";
+                    }
+                    else {
+                        pictureElement.style.visibility = "hidden";
+                    }
+                };
+
+                const readImageFile = (file, pictureElement) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        pictureElement.src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                    toggleImgElement(1);
+                };
+
+                const signUpProfilePicture_OnMouseOver = () => {
+                    const navigationPanel = document.getElementById("signUpProfilePicNavBar");
+                    navigationPanel.style.visibility = "visible";
+                };
+
+                const signUpProfilePicture_OnMouseOut = () => {
+                    const navigationPanel = document.getElementById("signUpProfilePicNavBar");
+                    navigationPanel.style.visibility = "hidden";
+                };
+
+                const removePicture_OnClick = (inputElementId, outputElementId)=>{
+                    const pictureInputElement = document.getElementById(inputElementId);
+                    const outputImageElement = document.getElementById(outputElementId);
+                    outputImageElement.setAttribute('src', '');
+
+                    pictureInputElement.files = null;
+                    toggleImgElement(0);
+                };
+
+                </script>
+
+            </div>
+        </div>
+
+        <div id="pageFooterPanel" class="pageFooter">
+            <hr class="footerLine"/>
+            <footer>
+                <div class="h-centerGroup">
+                    <div>
+                        <a href="#">About</a>
+                        <!-- <a href="./PrivacyPolicy.html">Privacy Policy</a> -->
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="h-centerGroup">
+                    <label id="footerCopyrightLbl"></label>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/layout.js"> </script>
+</body>
+</html>
