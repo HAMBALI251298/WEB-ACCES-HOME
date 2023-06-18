@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>Create Bank Account - Bank Hambali</title>
+</head>
+<body>
+    <div>
+        <div id="pageHeaderPanel" class="pageHeader">
+            <a class="homeLink" href="#">
+                <!-- <img/> -->
+                <label>
+                    Bank Hambali
+                </label>
+            </a>
+        </div>
+
+        <div id="pageBodyPanel" class="pageBody">
+            <div>
+                <div class="h-centerText">
+                    <h3>Please provide the correct information and<br/>
+                    click the "Create Account" button.<br/>
+                    </h3>
+                    <i>
+                        NB: Required fields begin with <span class="required-Label"></span>
+                    </i>
+                </div>
+                <br/>
+                <div class="h-centerGroup">
+                    <div class="formPanel createBankAccount">
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel">
+                                    State
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <select id="statesComboBox" name="state" class="formPanelSelect">
+                                    <option value="lagos">Lagos</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel">
+                                    Branch
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <select id="branchesComboBox" name="branch" class="formPanelSelect">
+                                    <option value="15 Adeniyi Jones">15 Adeniyi Jones</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel">
+                                    Id Type
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <select id="idTypesComboBox" name="idType" class="formPanelSelect">
+                                    <option value="International Passport">International Passport</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    Id number
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="idNumberInput" type="number" class="formPanelInput" name="idNumber" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    Expiry date
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="idExpiryDateInput" type="date" class="formPanelInput" name="idExpiryDate" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="h-centerGroup">
+                            <input type="submit" class="actionBtn" value="Create Account"/>
+                        </div>
+
+                    </div>
+                </div>
+                <script type="text/javascript">
+                </script>
+            </div>
+        </div>
+
+        <div id="pageFooterPanel" class="pageFooter">
+            <hr class="footerLine"/>
+            <footer >
+                <div class="h-centerGroup">
+                    <div>
+                        <a href="#">About</a>
+                        <!-- <a href="./PrivacyPolicy.html">Privacy Policy</a> -->
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="h-centerGroup">
+                    <label id="footerCopyrightLbl"></label>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/layout.js"> </script>
+</body>
+</html>
