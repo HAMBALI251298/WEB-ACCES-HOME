@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>Sign In - Bank Hambali</title>
+</head>
+<body>
+    <div>
+        <div id="pageHeaderPanel" class="pageHeader">
+            <a class="homeLink" href="#">
+                <!-- <img/> -->
+                <label>
+                    Banka
+                </label>
+            </a>
+        </div>
+
+        <div id="pageBodyPanel" class="pageBody">
+            <div>
+                <br/>
+                <div class="h-centerGroup">
+                    <div class="errorPanel negative" id="inputErrorPanel">
+                    </div>
+                </div>
+
+                <div class="h-centerGroup">
+                    <div class="formPanel signIn">
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel required-Label">
+                                    Email
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input type="email" class="formPanelInput" name="registeredUserEmail" placeholder="marcus@qmail.com" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel required-Label">
+                                    Password
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input type="password" class="formPanelInput" name="registeredUserPassword" id="registeredUserPassword" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="h-centerGroup">
+                            <button id="signInBtn" class="actionBtn">
+                                Sign In
+                            </button>
+                        </div>
+
+                        <br/>
+                        <span class="h-centerGroup">
+                            <span>
+                                <label>Forgot password?</label>
+                                <a class="inline" href="#">Reset Password</a>
+                            </span>
+                        </span>
+                    </div>
+
+                </div>
+                <script type="text/javascript"></script>
+            </div>
+
+        </div>
+
+        <div id="pageFooterPanel" class="pageFooter">
+            <hr class="footerLine"/>
+            <footer >
+                <div class="h-centerGroup">
+                    <div>
+                        <a href="#">About</a>
+                        <!-- <a href="./PrivacyPolicy.html">Privacy Policy</a> -->
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="h-centerGroup">
+                    <label id="footerCopyrightLbl"></label>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/layout.js"> </script>
+</body>
+</html>
