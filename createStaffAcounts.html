@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>Create Staff Account - Bank Hambali</title>
+</head>
+<body>
+    <div>
+        <div id="pageHeaderPanel" class="pageHeader">
+            <a class="homeLink" href="#">
+                <!-- <img/> -->
+                <label>
+                    Bank Hambali
+                </label>
+            </a>
+        </div>
+
+        <div id="pageBodyPanel" class="pageBody">
+            <div>
+                <div class="h-centerText">
+                    <h3>
+                        Please fill in the required fields and submit.<br/>
+                    </h3>
+                    <i>
+                        NB: Required fields begin with <span class="required-Label"></span>
+                    </i>
+                </div>
+                <br/>
+                <div class="h-centerGroup">
+                    <div class="formPanel">
+
+                        <div class="formPanelRow createStaffAccount">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel">
+                                    Administrator Account
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="isAdminCheckBox" type="checkbox" class="formPanelInput"/>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    Last Name
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="staffLastNameInput" name="newUserLastName" class="rightSignUpInput formPanelInput" type="text" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="signUpInputRow formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    First Name
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="staffFirstNameInput" name="newUserFirstName" class="formPanelInput" type="text" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="formPanelLabel">
+                                    Email
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="staffEmailInput" type="email" class="formPanelInput"/>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    Phone Number
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="staffPhoneNumberInput" type="tel" class="formPanelInput" name="newUserPhoneNumber" placeholder="(234) - 801- 2345 - 6789" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    Password
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="staffPassword" type="password" class="formPanelInput" name="newUserPassword" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="signUpInputRow formPanelRow">
+                            <span class="formPanelLeftItem">
+                                <label class="required-Label formPanelLabel">
+                                    Confirm Password
+                                </label>
+                            </span>
+                            <span class="formPanelRightItem">
+                                <input id="staffConfirmPassword" type="password" class="formPanelInput" name="newUserConfirmPassword" required="required"/>
+                            </span>
+                        </div>
+
+                        <div class="h-centerGroup">
+                            <button class="actionBtn">
+                                Create Staff Account
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="pageFooterPanel" class="pageFooter">
+            <hr class="footerLine"/>
+            <footer >
+                <div class="h-centerGroup">
+                    <div>
+                        <a href="#">About</a>
+                        <!-- <a href="./PrivacyPolicy.html">Privacy Policy</a> -->
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="h-centerGroup">
+                    <label id="footerCopyrightLbl"></label>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/layout.js"> </script>
+</body>
+</html>
