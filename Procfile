@@ -1,1 +1,1 @@
-web: node bankaAPI.js
+web: node HambaliAPI.js
